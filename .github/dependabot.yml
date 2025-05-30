@@ -12,14 +12,14 @@ updates:
       interval: "daily"
     cooldown:
       default-days: 90
-    include:
+      include:
         - "vapor/vapor"
-    exclude:
+      exclude:
         - "patrick-zippenfenig/swifteccodes"
-    #cooldown:
-      #semver-major-days: 60
-      #semver-minor-days: 60
-      #semver-patch-days: 60
+      #cooldown:
+        #semver-major-days: 60
+        #semver-minor-days: 60
+        #semver-patch-days: 60
 
  
 
