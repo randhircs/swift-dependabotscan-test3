@@ -9,19 +9,12 @@ updates:
   - package-ecosystem: "swift" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "monthly"
-      
-  # Default Cooldown (90 days)   
-  - package-ecosystem: "swift"
-    open-pull-requests-limit: 16
-    directory: "/"
-    schedule:
       interval: "daily"
     cooldown:
       default-days: 90
     include:
         - "vapor/vapor"
-      exclude:
+    exclude:
         - "patrick-zippenfenig/swifteccodes"
     #cooldown:
       #semver-major-days: 60
