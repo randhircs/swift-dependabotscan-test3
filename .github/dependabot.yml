@@ -57,9 +57,6 @@ updates:
     cooldown:
       default-days: 60
       include:
-        - "phpunit/phpunit"
-        - "mockery/mockery"
-        - "squizlabs/php_codesniffer"
+        - "vapor/vapor"
       exclude:
-        - "friendsofphp/php-cs-fixer"
-        - "fakerphp/faker"
+        - "patrick-zippenfenig/swifteccodes"
