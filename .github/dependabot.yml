@@ -14,49 +14,20 @@ updates:
   # Default Cooldown (90 days)   
   - package-ecosystem: "swift"
     open-pull-requests-limit: 16
-    directory: "/cooldown_default"
+    directory: "/"
     schedule:
       interval: "daily"
     cooldown:
       default-days: 90
-
-  # Semver Major Cooldown (60 days)
-  - package-ecosystem: "swift"
-    open-pull-requests-limit: 16
-    directory: "/cooldown_major"
-    schedule:
-      interval: "daily"
-    cooldown:
-      semver-major-days: 60
-
-   # Semver Minor Cooldown (60 days)
-  - package-ecosystem: "swift"
-    open-pull-requests-limit: 14
-    directory: "/cooldown_minor"
-    schedule:
-      interval: "daily"
-    cooldown:
-      semver-minor-days: 60
-
-  # Semver Patch Cooldown (60 days)
-  - package-ecosystem: "swift"
-    open-pull-requests-limit: 14
-    directory: "/cooldown_patch"
-    schedule:
-      interval: "daily"
-    cooldown:
-      semver-patch-days: 60
-
-
-  # Cooldown with Mixed Inclusion/Exclusion
-  - package-ecosystem: "swift"
-    open-pull-requests-limit: 14
-    directory: "/cooldown_mixed"
-    schedule:
-      interval: "daily"
-    cooldown:
-      default-days: 60
-      include:
+    include:
         - "vapor/vapor"
       exclude:
         - "patrick-zippenfenig/swifteccodes"
+    #cooldown:
+      #semver-major-days: 60
+      #semver-minor-days: 60
+      #semver-patch-days: 60
+
+ 
+
+ 
